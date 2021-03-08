@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>21</title>
+
+    <!--Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <!--!Bootstrap CDN-->
+
+    <!--Owl Carousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <!--!Owl Carousel-->
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <!--Font Awesome-->
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!--!Custom CSS-->
+</head>
+
+<body>
+    <!--Header-->
+    <!--Main Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./assets/Logo.png" style="width: 90px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse font-poppins font-s-14 font-w-600 color-primary"
+                id="navbarNavDropdown">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">PRODUCTS &nbsp;<i
+                                class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT US</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-head font-poppins font-s-14 font-w-600" style="margin-right: 20px">
+                    LOGIN
+                </button>
+                <button type="button" class="btn btn-head font-poppins font-s-14 font-w-600" style="margin-right: 20px">
+                    CART <span class="badge color-secondary">9</span><span class="visually-hidden">unread
+                        messages</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!--!Main Navigation-->
+    <!--!Header-->
+
+    <main id="main-site">
+        <!--Cart-->
+        <section id="cart" class="py-3">
+            <div class=" m-auto w-75">
+
+                <!--  shopping cart items   -->
+                <div class="row">
+                    <div class="col-sm-7 col-md-12 col-lg-7">
+                        <h5 class="font-poppins font-s-20 border-bottom font-w-700 py-3">CART</h5>
+                        <!-- cart item -->
+                        <div class="row border-bottom py-3 mt-3">
+                            <div class="col-sm-2">
+                                <img src="./assets/Logo.png" style="height: 120px;" class="img-fluid">
+                            </div>
+                            <div class="col-sm-8">
+                                <h5 class="font-poppins font-s-18">Samsung Galaxy 10</h5>
+                                <small class="font-poppins" style="color: #898989;">by Samsung</small>
+
+                                <!-- Quantity -->
+                                <div class="qty d-flex pt-2">
+                                    <div class="d-flex font-poppins " style="width: 120px;">
+                                        <button class="qty_minus border bg-light" style="width: 120px;"
+                                            data-id="pro1"><i class="fas fa-minus"></i></button>
+                                        <input type="text" data-id="pro1"
+                                            class="qty_input text-center font-poppins font-w-800 border px-2 w-100 bg-light"
+                                            disabled value="1" placeholder="1">
+                                        <button data-id="pro1" style="width: 120px;" class="qty_plus border bg-light"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <button type="submit"
+                                        class="btn font-poppins font-s-12 font-w-700 px-3 border-right">DELETE</button>
+                                    <button type="submit" class="btn font-poppins font-s-12 font-w-700"
+                                        style="padding:10px 0 10px 0 ;">WISHLIST</button>
+                                </div>
+                                <!-- !Quantity -->
+
+                            </div>
+
+                            <div class="col-sm-2 text-right">
+                                <div class="text-center font-poppins font-s-18 font-w-600 mt-3">
+                                    ₹<span class="product_price">152</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--!cart item-->
+
+                        <!--cart item-->
+                        <div class="row  border-bottom  py-3 mt-3 mb-3">
+                            <div class="col-sm-2">
+                                <img src="./assets/Logo.png" style="height: 120px;" alt="cart1" class="img-fluid">
+                            </div>
+                            <div class="col-sm-8">
+                                <h5 class="font-poppins font-s-18">Samsung Galaxy 10</h5>
+                                <small class="font-poppins" style="color: #898989;">by Samsung</small>
+
+                                <!-- Quantity -->
+                                <div class="qty d-flex pt-2">
+                                    <div class="d-flex font-rale " style="width: 120px;">
+                                        <button class="qty_minus border bg-light" style="width: 120px;"
+                                            data-id="pro2"><i class="fas fa-minus"></i></button>
+                                        <input type="text" data-id="pro2"
+                                            class="qty_input text-center font-poppins font-w-800 border px-2 w-100 bg-light"
+                                            disabled value="1" placeholder="1">
+                                        <button data-id="pro2" style="width: 120px;" class="qty_plus border bg-light"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <button type="submit"
+                                        class="btn font-poppins font-s-12 font-w-700 px-3 border-right">DELETE</button>
+                                    <button type="submit" class="btn font-poppins font-s-12 font-w-700 "
+                                        style="padding:10px 0 10px 0 ;">WISHLIST</button>
+                                </div>
+                                <!-- !Quantity -->
+
+                            </div>
+
+                            <div class="col-sm-2 text-right">
+                                <div class="text-center font-poppins font-s-18 font-w-600 mt-3">
+                                    ₹<span class="product_price">900</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- !cart item -->
+                    </div>
+
+                    <!-- Subtotal Section-->
+                    <div class="col-sm-5 col-md-12 col-lg-5">
+                        <div class="sub-total" style="border: 2px solid #dddddd;">
+                            <h6 class="font-s-16 font-w-700 font-poppins color-primary py-3" style="margin-left: 25px;">
+                                CART TOTALS</h6>
+                            <div class="py-4">
+                                <h5 class="font-poppins font-w-600 font-s-14"
+                                    style="margin-left: 25px;margin-right:25px;padding-bottom: 15px;border-bottom: 2px solid #dddddd;">
+                                    Subtotal
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        style="text-align-last:right;color: #898989;">₹1800</span>
+                                </h5>
+                                <p class="font-poppins font-s-20 font-w-700"
+                                    style="margin-left: 25px;margin-right:25px;padding-bottom: 15px;padding-right: 200px;">
+                                    Total
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>₹1800</span></p>
+                                <button type="submit" class="btn btn-add font-poppins font-s-15 font-w-700 mt-3"
+                                    style="margin:auto; display: block;width: 90%;">PROCEED
+                                    TO CHECKOUT&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- !Subtotal Section-->
+                </div>
+                <!--  !Cart Items -->
+            </div>
+        </section>
+        <!-- !Cart Section -->
+        </div>
+        </section>
+        <!--!Cart-->
+
+        <!--Featured Products-->
+        <section id="featured-products">
+            <div class="py-5">
+                <p class="text-first color-primary font-poppins font-s-20 font-w-800 " style="margin-left: 70px;">
+                    RELATED PRODUCTS</p>
+                <!--Owl Carousel-->
+                <div class="owl-carousel owl-theme">
+                    <div class="item p-5">
+                        <div class="product font-poppins">
+                            <a href="#"><img src="./assets/Logo.png" class="img-fluid"></a>
+                            <div class="text-first">
+                                <h6>JACKET</h6>
+                                <div class="rating text-warning font-s-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>₹500</span>
+                                </div>
+                                <button type="submit" class="btn btn-add font-s-12 font-w-700">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--!Owl Carousel-->
+            </div>
+        </section>
+        <!--!Featured Products-->
+
+
+    </main>
+    <!-- !start #main-site -->
+
+    <!--Footer-->
+    <footer id="footer" class="bg-dark text-white py-5">
+        <div class="row m-auto px-5">
+            <div class="col-lg-3">
+                <h4 class="font-poppins font-s-30 font-w-600 color-secondary">TWENTY ONE</h4><br>
+                <p class="font-s-16 font-poppins text-white font-w-600" style="line-height: 10px;">ADDRESS:</p>
+                <p class="font-s-14 font-poppins text-white-50" style="line-height: 10px;">MSR Complex, Rajajinagar</p>
+                <p class="font-s-16 font-poppins text-white font-w-600" style="line-height: 10px;">PHONE:</p>
+                <p class="font-s-14 font-poppins text-white-50" style="line-height: 10px;">Toll Free (123) 456-7890
+                </p>
+                <p class="font-s-16 font-poppins text-white font-w-600" style="line-height: 10px;">EMAIL:</p>
+                <p class="font-s-14 font-poppins text-white-50" style="line-height: 10px;">cs@twentyone.com</p>
+            </div>
+            <div class="col-lg-4 col-12 py-3">
+                <h4 class="font-poppins font-s-20">NEWSLETTER</h4>
+                <p class="font-poppins font-s-14 text-white-50">Get all the latest information on Events, Sales and
+                    Offers.<br> Sign
+                    up for newsletter today.</p>
+                <form class=" row row-cols form-row">
+                    <div class="col">
+                        <input type="text" class="form-control font-poppins font-s-13"
+                            style="border-radius: 75px;padding: 10px;" placeholder="Email address">
+                    </div>
+                    <div class="col">
+                        <button type="submit"
+                            class="btn btn-sub mb-2 font-poppins font-s-13 font-w-600">SUBSCRIBE</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-2 col-12 py-3">
+                <h4 class="font-poppins font-s-20">INFORMATION</h4>
+                <div class="d-flex flex-column flex-wrap">
+                    <a href="#" class="font-poppins font-s-14 text-white-50 pb-1" style="text-decoration: none;">About
+                        Us</a>
+                    <a href="#" class="font-poppins font-s-14 text-white-50 pb-1"
+                        style="text-decoration: none;">Delivery Information</a>
+                    <a href="#" class="font-poppins font-s-14 text-white-50 pb-1" style="text-decoration: none;">Privacy
+                        Policy</a>
+                    <a href="#" class="font-poppins font-s-14 text-white-50 pb-1" style="text-decoration: none;">Terms &
+                        Conditions</a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-12 py-3">
+                <h4 class="font-poppins font-s-20">ACCOUNT</h4>
+                <div class="d-flex flex-column flex-wrap">
+                    <a href="#" class="font-poppins font-s-14 text-white-50 pb-1" style="text-decoration: none;">My
+                        Account</a>
+                    <a href="#" class="font-poppins font-s-14 text-white-50 pb-1" style="text-decoration: none;">Order
+                        History</a>
+                    <a href="#" class="font-poppins font-s-14 text-white-50 pb-1" style="text-decoration: none;">Wish
+                        List</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <div class="copyright text-center bg-dark text-white py-2">
+        <p class="font-poppins font-size-14">&copy; Copyrights 2020. Desinged By <a href="#" class="color-secondary"
+                style="text-decoration: none;">JB</a></p>
+    </div>
+    <!--!Footer-->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src=" https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!--Owl Carousel CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <!--!Owl Carousel CDN-->
+
+    <!--Custom JS-->
+    <script src="./index.js"></script>
+    <!--!Custom JS-->
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+/*Custom Buttons*/
+.btn-head {
+	border: none;
+	border-radius: 0%;
+	color: white;
+	width: 90px;
+	padding: 7px;
+	background-color: $color-primary;
+}
+
+.btn-head:hover {
+	border: none;
+	border-radius: 0%;
+	color: white;
+	width: 90px;
+	padding: 7px;
+	background-color: #32373d;
+}
+
+.btn-banner {
+	border: none;
+	border-radius: 0%;
+	color: white;
+	background-color: $color-primary;
+}
+
+.btn-banner:hover {
+	border: none;
+	border-radius: 0%;
+	color: white;
+	background-color: #2a2e33;
+}
+
+.btn-banner-light {
+	border: none;
+	border-radius: 0%;
+	color: $color-primary;
+	background-color: white;
+}
+
+.btn-banner-light:hover {
+	border: none;
+	border-radius: 0%;
+	color: $color-primary;
+	background-color: #f2efef;
+}
+
+.btn-coll {
+	border: 3px solid #2a2e33;
+	border-radius: 0%;
+	padding: 10px;
+	background-color: none;
+}
+
+.btn-coll:hover {
+	border: 3px solid #2a2e33;
+	border-radius: 0%;
+	padding: 10px;
+	color: #f2efef;
+	background-color: #2a2e33;
+}
+
+.btn-add {
+	border-radius: 0%;
+	padding: 8px;
+	color: #f2efef;
+	background-color: #2a2e33;
+}
+
+.btn-add:hover {
+	border-radius: 0%;
+	padding: 8px;
+	color: #2a2e33;
+	background-color: $color-secondary;
+}
+
+.btn-sub {
+	border-radius: 75px;
+	padding: 10px;
+	color: #2a2e33;
+	background-color: $color-secondary;
+}
+
+.btn-sub:hover {
+	border-radius: 75px;
+	padding: 10px;
+	color: #2a2e33;
+	background-color: $color-secondary;
+}
+
+.size-btn {
+	color: #a7a7a7;
+	border-radius: 0%;
+}
+
+.size-btn:hover {
+	background-color: #ffdc48;
+	color: $color-primary;
+	border-radius: 0%;
+}
+
+.active1 {
+	background-color: #ffdc48;
+	color: white;
+	border: black;
+}
